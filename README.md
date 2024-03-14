@@ -27,19 +27,16 @@ Before diving into the algorithm, ensure you have a basic understanding of Pytho
 Kadane's Algorithm hinges on two primary concepts: **local maximum subarray sum** at each array position and **global maximum subarray sum** found so far. Here's how it works:
 
 ```python
-# Initialize the array
+# The test
 a = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 
-# Set initial values for the maximum sums
-now_max = a[0]  # Current maximum sum
-end_max = a[0]  # Maximum sum at the end of the array
+# The validation
+now_max = a[0]  
+end_max = a[0]  
 
-# Iterate through the array starting from the second element
+# The iteration
 for i in a[1:]:
-    # Update the end_max to the higher of the current element or the sum of current element and end_max
     end_max = max(i, end_max + i)
-    # Update now_max if end_max is higher
     now_max = max(now_max, end_max)
 
-# Output the maximum sum
 print(f"Maximum Sum of Contiguous Subarray: {now_max}")
