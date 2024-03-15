@@ -1,16 +1,8 @@
-# Maximum Subarray Sum Using Kadane's Algorithm
+# Maximum Subarray Sum 
 
-Welcome to the detailed guide on implementing Kadane's Algorithm to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers. This powerful algorithm offers an efficient solution, boasting a linear runtime complexity of O(n), which makes it ideal for processing large datasets swiftly.
+Welcome to the detailed guide on how to resolve this problem with a difficult of O(n)
 
-## Introduction
 
-Kadane's Algorithm, a cornerstone in the field of computer science and dynamic programming, elegantly solves the maximum subarray sum problem. Unlike brute-force approaches that examine all possible subarrays, Kadane's method smartly traverses the array once, updating sums to find the maximum.
-
-### What You Will Learn
-
-- The logic behind Kadane's Algorithm
-- Step-by-step Python implementation
-- Practical applications and insights
 
 ## Getting Started
 
@@ -23,8 +15,7 @@ Before diving into the algorithm, ensure you have a basic understanding of Pytho
 - Basic knowledge of Python syntax and loops
 
 ## Implementation Details
-
-Kadane's Algorithm hinges on two primary concepts: **local maximum subarray sum** at each array position and **global maximum subarray sum** found so far. Here's how it works:
+ Algorithm hinges on two primary concepts: **local maximum subarray sum** at each array position and **global maximum subarray sum** found so far. Here's how it works:
 
 ```python
 # The test
